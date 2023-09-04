@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5920fdfd7c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/iskander-low-resolution-logo-color-on-transparent-background.png" class="logo"> -->
+                <h1><span id="iskander">I</span>skander</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I am <span id="text"></span></h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Iskander-AIS-vertical.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a software engineering student at the University of Waterloo. Technology has been a part of my life ever since I was a child, so I am driven to make an impact by learning and applying myself. On this website you can learn more about my skills, projects, and how to reach out to me.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>C++, C, Java, HTML, CSS, Javascript</li>
+                            <li><span>Libraries/Framewoks</span><br>React, Express, TailwindCSS</li>
+                            <li><span>Developer Tools</span><br>Git, VS Code, Postman</li>
+                            <li><span>Other</span><br>MS Office, Node JS, Firebase</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2027</span><br>Bachelor of Software Engineering, University of Waterloo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>some random text</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>some random text</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-chrome"></i>
+                    <h2>Web Development</h2>
+                    <p>some random text</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/coachid-narrow.PNG" alt="">
+                    <div class="layer">
+                        <h3>CoachID</h3>
+                        <p>This is a personal gym chatbot. The app is built using a fine tuned AI model. I trained the model with my answers to some of the questions people ask me in the gym. Hence, using the OpenAI API, the user makes a call to the fine tuned model and gets a completion back.</p>
+                        <a href="https://coachid.tech/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images//constructid-narrow.PNG" alt="">
+                    <div class="layer">
+                        <h3>ConstructID</h3>
+                        <p>The app emulates an online construction store where the user can purchase construction materials online. The link takes the user to a login page. Once the user logs in they can choose an item and purchase it. There is also a contact form the user can fill out to get in touch with me.</p>
+                        <a href="https://constructid.online/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/construction-log.PNG" alt="">
+                    <div class="layer">
+                        <h3>Construction Log</h3>
+                        <p>This app lets users logging activities from construction. In particular, they can upload a file, choose a date, location, type of work done, and whether or not there were issues along the way.</p>
+                        <a href="https://marvelous-basbousa-b56a8a.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/diska432" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Get in Touch</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>idauleto@uwaterloo.ca</p>
+                    <p><i class="fa-solid fa-phone"></i>+1-519-591-6870</p>
+                    <div class="social-icons">
+                        <!-- <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a> -->
+                        <a href="https://www.linkedin.com/in/iskander-dauletov/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/diska432"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Resume-Iskander.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form onsubmit="sendMail(); reset(); return false;">
+                        <input type="text" id="Name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <textarea id="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("GkmMHCnbhsNmVr-cM");
+            
+        })();
+    </script>
+    
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxccrJAJRkUospdokvEGQSmdcARjjDM47FCX9cFKuqe_EuiP9ldMtguv4klOwfPkFz7/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script> -->
+</body>
+</html>
