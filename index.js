@@ -72,7 +72,7 @@ function deleteOut(txt1Arr, txt2Arr, txt3Arr, curChar = 0){
     let elTxt = el.innerHTML;
     const elTxtArr = elTxt.split("");
     const elTxtArrLength = elTxtArr.length;
-    console.log(elTxtArr.length - 1);
+    // console.log(elTxtArr.length - 1);
     const newEltxt = elTxtArr.splice(0, curChar - 1).join("");
     modifyText(el, newEltxt);
     if(elTxtArrLength == 0){
