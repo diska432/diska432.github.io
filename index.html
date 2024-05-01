@@ -13,12 +13,10 @@
     <div id="header">
         <div class="container">
             <nav>
-                <!-- <img src="images/iskander-low-resolution-logo-color-on-transparent-background.png" class="logo"> -->
                 <h1><span id="iskander">I</span>skander</h1>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <!-- <li><a href="#services">Services</a></li> -->
                     <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
@@ -26,10 +24,7 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <!-- <p>Web Developer</p> -->
-                
                 <p>Hi, I am <span id="text"></span></p>
-                <!-- <p>I develop websites and web applications</p> -->
             </div>
         </div>
     </div>
@@ -45,17 +40,41 @@
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <div class="slider active-slider">
+                            <div class="slides" onclick="nextSkillSlide()">
+                                <img src="images/javascript.png" alt="Javascript icon">
+                                <img src="images/typescript.png" alt="Typescript icon">
+                                <img src="images/vueJS.png" alt="Vue icon">
+                                <img src="images/jest.webp" alt="Jest icon">
+                                <img src="images/nodeJS.png" alt="Node icon">
+                                <img src="images/reactJS.png" alt="React icon">
+                                <img src="images/tailwindCSS.jpg" alt="TailwindCSS icon">
+                                <img src="images/html.png" alt="HTML icon">
+                                <img src="images/css.png" alt="CSS icon">
+                                <img src="images/cpp.png" alt="C++ icon">
+                                <img src="images/c.png" alt="C icon">
+                                <img src="images/git.png" alt="Git icon">
+                            </div>
+                        </div>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <div class="slider">
+                            <div class="slides-education" onclick="nextSlide()">
+                                <img src="images/uwaterloo.png" alt="uwaterloo icon">
+                                <img src="images/uwaterlooSESoc.png" alt="SE Soc icon">
+                                <img src="images/mathSoc.webp" alt="Math Soc icon">
+                                <img src="images/uwaterlooWarriors.png" alt="uwaterlooWarriors icon">
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Languages</span><br>C++, C, Java, HTML, CSS, Javascript, Python</li>
-                            <li><span>Libraries/Framewoks</span><br>React.js, Express.js, TailwindCSS, Next.js, Numpy, Scikit-learn, Pandas, Three.js, Jest, D3.js, Selenium</li>
+                            <li><span>Languages</span><br>C++, C, JavaScript, TypeScript HTML, CSS, SCSS, Bash, Python</li>
+                            <li><span>Libraries/Framewoks</span><br>Vue.js, React.js, Express.js, Jest, Vue Testing Library, Material UI, Tailwind CSS, Bootstrap, Numpy, Scikit-learn, Pandas, Three.js, D3.js, Selenium</li>
                             <li><span>Developer Tools</span><br>Git, VS Code, Postman</li>
-                            <li><span>Other</span><br>Node.js, Firebase, REST API, Netlify, Arduino, VirtualBox, MS Office</li>
+                            <li><span>Other</span><br>Node.js, Firebase, REST API, Netlify, Arduino, VirtualBox</li>
                         </ul>
                     </div>
+                    
                     <div class="tab-contents" id="experience">
                         <ul>
                             
@@ -73,7 +92,7 @@
                             <li><a href="https://ucalendar.uwaterloo.ca/2021/COURSE/course-CS.html#CS137" target="_blank">CS 137: <span>Programming Principles</span></a></li>
                             <li><a href="https://ucalendar.uwaterloo.ca/2021/COURSE/course-CS.html#CS138" target="_blank">CS 138: <span>Introduction to Data Abstraction and Implementation</span></a></li>
                             <li><a href="https://ucalendar.uwaterloo.ca/2021/COURSE/course-CS.html#CS241" target="_blank">CS 241: <span>Foundations of Sequential Programs</span></a></li>
-                            <li><a href="https://ucalendar.uwaterloo.ca/2021/COURSE/course-CS.html#CS240" target="_blank">CS 240: <span>Data Structures and Data Management</span></a></li>
+                            <li><a href="https://ucalendar.uwaterloo.ca/2021/COURSE/course-CS.html#CS240" target="_blank">CS 240: <span>Data Structures and Data Management</span></a></li> 
                             <li><a href="https://ucalendar.uwaterloo.ca/2021/COURSE/course-CS.html#CS247" target="_blank">CS 247: <span>Software Engineering Principles</span></a></li>
                             <li><a href="https://ucalendar.uwaterloo.ca/2021/COURSE/course-CS.html#CS348" target="_blank">CS 348: <span>Introduction to Database Management</span></a></li>
                             <li><a href="https://ucalendar.uwaterloo.ca/2021/COURSE/course-ECE.html#ECE124" target="_blank">ECE 124: <span>Digital Circuits and Systems</span></a></li>
@@ -113,7 +132,7 @@
                     </div>
                 </div>
             </div>
-            <a href="https://github.com/diska432" class="btn">See more</a>
+            <a href="https://github.com/diska432" class="btn" target="_blank">See more</a>
         </div>
     </div>
     <div id="contact">
@@ -124,10 +143,8 @@
                     <p><i class="fa-solid fa-paper-plane"></i>idauleto@uwaterloo.ca</p>
                     <p><i class="fa-solid fa-phone"></i>+1-519-781-6568</p>
                     <div class="social-icons">
-                        <!-- <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter-square"></i></a> -->
-                        <a href="https://www.linkedin.com/in/iskander-dauletov/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/diska432"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/iskander-dauletov/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/diska432" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                     <a href="images/Resume-Iskander.pdf" download class="btn btn2">Download Resume</a>
                 </div>
@@ -151,18 +168,6 @@
             emailjs.init("GkmMHCnbhsNmVr-cM");
             
         })();
-    </script>
-    
-    <!-- <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxccrJAJRkUospdokvEGQSmdcARjjDM47FCX9cFKuqe_EuiP9ldMtguv4klOwfPkFz7/exec'
-        const form = document.forms['submit-to-google-sheet']
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script> -->
+    </script> 
 </body>
 </html>
