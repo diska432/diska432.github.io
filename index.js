@@ -4,8 +4,8 @@ const sliders = document.getElementsByClassName("slider");
 const sidemenu = document.getElementById("sidemenu");
 
 const txt1 = "Iskander ";
-const txt2 = "an aspiring software developer";
-const txt3 = "a software engineering student ";
+const txt2 = "a software developer";
+const txt3 = "a computer science student ";
 const txt1Arr = txt1.split("");
 const txt2Arr = txt2.split("");
 const txt3Arr = txt3.split("");
