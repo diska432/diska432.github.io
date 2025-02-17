@@ -17,8 +17,8 @@
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
                     <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -31,9 +31,6 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
-                    <img src="images/Iskander-AIS-vertical.jpg">
-                </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>I am a computer science student at the University of Waterloo. I have previously interned at Descartes Systems Group, Feroot Security (YC W21), and Manulife. I enjoy learning and solving challenging problems.I am driven to make an impact by constantly challenging myself to learn something new. </p>
@@ -44,6 +41,10 @@
                             <div class="slides" onclick="nextSkillSlide()">
                                 <img src="images/javascript.png" alt="Javascript icon">
                                 <img src="images/typescript.png" alt="Typescript icon">
+                                <img src="images/Python.svg.png" alt="Python icon">
+                                <img src="images/csharp.png" alt="C# icon">
+                                <img src="images/cpp.png" alt="C++ icon">
+                                <img src="images/c.png" alt="C icon">
                                 <img src="images/vueJS.png" alt="Vue icon">
                                 <img src="images/jest.webp" alt="Jest icon">
                                 <img src="images/nodeJS.png" alt="Node icon">
@@ -51,8 +52,7 @@
                                 <img src="images/tailwindCSS.jpg" alt="TailwindCSS icon">
                                 <img src="images/html.png" alt="HTML icon">
                                 <img src="images/css.png" alt="CSS icon">
-                                <img src="images/cpp.png" alt="C++ icon">
-                                <img src="images/c.png" alt="C icon">
+                                
                                 <img src="images/git.png" alt="Git icon">
                             </div>
                         </div>
@@ -83,9 +83,6 @@
                     <div class="tab-contents" id="education">
                         <ul>
                             <li id="bachelor"><span>2022-2027</span><br>Bachelor of Computer Science, University of Waterloo</li>
-                            <li><span>--</span> Learned to design programs using both functional and object-oriented programming</li>
-                            <li><span>--</span> Gained a strong understanding of programming principles, memory management, and data structures and algorithms  </li>
-                            <li><span>--</span> Learned arithmetic logic units, basic machine architecture, assemblers, specification and translation of programming languages</li>
                         </ul>
                         <h4>Relevant Coursework</h5>
                         <ul id="coursework">
@@ -105,71 +102,56 @@
             </div>
         </div>
     </div>
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Projects</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/compiler.jpg" alt="">
-                    <div class="layer">
-                        <h3>C Compiler</h3>
-                        <p>This is a compiler for a subset of C language implemented with a MIPS assembler. The process involves code translation, parsing, code generation and more. To learn more follow the link below.</p>
-                        <a href="https://github.com/diska432/C-Compiler"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/chess.jpg" alt="">
-                    <div class="layer">
-                        <h3>Chess</h3>
-                        <p>This is an implementation of chess made using C++ showcasing object-oriented principles and various design patterns. Follow the link for more information.</p>
-                        <a href="https://github.com/diska432/cs247-chess"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/coachid-narrow.PNG" alt="">
-                    <div class="layer">
-                        <h3>Fitness Chatbot</h3>
-                        <p>This is a personal gym chatbot. The app is built using a fine tuned AI model. I trained the model with my answers to some of the questions people ask me in the gym. Hence, using the OpenAI API, the user makes a call to the fine tuned model and gets a completion back.</p>
-                        <a href="https://github.com/diska432/coachid"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="https://github.com/diska432" class="btn" target="_blank">See more</a>
-        </div>
-    </div>
     <div id="contact">
         <div class="container">
             <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Get in Touch</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>idauleto@uwaterloo.ca</p>
-                    <p><i class="fa-solid fa-phone"></i>+1-519-781-6568</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/iskander-dauletov/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/diska432" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <a href="images/Resume-Iskander.pdf" download class="btn btn2">Download Resume</a>
-                </div>
                 <div class="contact-right">
-                    <form onsubmit="sendMail(); reset(); return false;">
-                        <input type="text" id="Name" placeholder="Your Name" required>
-                        <input type="email" id="email" placeholder="Your Email" required>
-                        <textarea id="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
+                    <h1 class="sub-title">Get in Touch</h1>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/iskander-dauletov/" target="_blank">LinkedIn <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/diska432" target="_blank">GitHub <i class="fa-brands fa-github"></i></a>
+                        <a href="./Resume.pdf" target="_blank">Resume <i class="fa-regular fa-file"></i></a>
+                        <a href="mailto:idauleto@uwaterloo.ca">Email <i class="fa-regular fa-envelope"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title" id="dummy">-</h1>
+            <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/compiler.jpg" alt="">
+                        <div class="layer">
+                            <h3>C Compiler</h3>
+                            <p>This is a compiler for a subset of C language implemented with a MIPS assembler. The process involves code translation, parsing, code generation and more. To learn more follow the link below.</p>
+                            <a href="https://github.com/diska432/C-Compiler" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/chess.jpg" alt="">
+                        <div class="layer">
+                            <h3>Chess</h3>
+                            <p>This is an implementation of chess made using C++ showcasing object-oriented principles and various design patterns. Follow the link for more information.</p>
+                            <a href="https://github.com/diska432/cs247-chess" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/coachid-narrow.PNG" alt="">
+                        <div class="layer">
+                            <h3>Fitness Chatbot</h3>
+                            <p>This is a personal gym chatbot. The app is built using a fine tuned AI model. I trained the model with my answers to some of the questions people ask me in the gym. Hence, using the OpenAI API, the user makes a call to the fine tuned model and gets a completion back.</p>
+                            <a href="https://github.com/diska432/coachid" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/diska432" class="btn" target="_blank">See more</a>
+            </div>
+        </div>
+    </div>
+    
     <script src="index.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init("GkmMHCnbhsNmVr-cM");
-            
-        })();
-    </script> 
 </body>
 </html>
