@@ -109,6 +109,36 @@ nav ul li a:hover::after {
   font-weight: 600;
   color: #fff;
 }
+.about-me-par {
+  padding-bottom: 1em;
+  font-size: large;
+}
+
+.draftaid {
+  text-decoration: none;
+  color: rgb(143, 113, 233)
+}
+
+.descartes {
+  text-decoration: none;
+  color: rgb(59, 140, 216)
+}
+
+.feroot {
+  text-decoration: none;
+  color: rgba(206, 100, 244, 0.729)
+}
+
+.manulife {
+  text-decoration: none;
+  color: rgba(88, 239, 151, 0.729)
+}
+
+.smartnet {
+  text-decoration: none;
+  color: rgba(194, 251, 187, 0.729)
+}
+
 .tab-titles {
   display: flex;
   margin: 20px 0 40px;
@@ -187,9 +217,12 @@ img.displaySlide {
   font-size: 18px;
 }   
 
+.tab-contents ul li {
+  font-size: 16px;
+}
 .tab-contents ul li span {
   color: #0d8f77;
-  font-size: 14px;
+  font-size: 18px;
 }
 .tab-contents ul li span:hover,
 .tab-contents ul li span:focus {
@@ -417,6 +450,7 @@ nav .fa-solid {
   }
   .sub-title {
     font-size: 40px;
+    /* padding-bottom: 40px; */
   }
   .about-col-1,
   .about-col-2 {
