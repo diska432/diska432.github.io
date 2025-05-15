@@ -14,12 +14,12 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(images/test4.jpg);
+  background-image: url(images/nightsky.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 #iskander {
-  color: #0ef6cc;
+  color: #f3f88e;
 }
 #header .container h1 {
   font-size: 30px;
@@ -52,7 +52,7 @@ nav ul li a::after {
   content: "";
   width: 0;
   height: 3px;
-  background: #0ef6cc;
+  background: #f3f88e;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -67,7 +67,7 @@ nav ul li a:hover::after {
   font-weight: 800;
 }
 .header-text p span {
-  color: #0ef6cc;
+  color: #f3f88e;
   border-right: 0.15em solid #fff;
   animation: blink 0.75s step-end infinite;
   width: max-content;
@@ -154,7 +154,7 @@ nav ul li a:hover::after {
   content: "";
   width: 0;
   height: 3px;
-  background: #0ef6cc;
+  background: #f3f88e;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -221,12 +221,12 @@ img.displaySlide {
   font-size: 16px;
 }
 .tab-contents ul li span {
-  color: #0d8f77;
+  color: #f3f88e;
   font-size: 18px;
 }
 .tab-contents ul li span:hover,
 .tab-contents ul li span:focus {
-  color: #0daf91;
+  color: #e0e852;
 }
 .tab-contents #coursework {
   font-size: 14px;
@@ -285,7 +285,7 @@ img.displaySlide {
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #0ef6cc);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #f3f88e);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -306,7 +306,7 @@ img.displaySlide {
 }
 .layer a {
   margin-top: 20px;
-  color: #0ef6cc;
+  color: #f3f88e;
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
@@ -326,15 +326,16 @@ img.displaySlide {
   display: block;
   margin: 50px auto;
   width: fit-content;
-  border: 1px solid #0ef6cc;
+  border: 1px solid #f3f88e;
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
-  color: #fff;
+  color: #000;
+  background-color: #fff;
   transition: background 0.5s;
 }
 .btn:hover {
-  background: #0ef6cc;
+  background: #f3f88e;
 }
 /* -------------------contact------------------ */
 
@@ -345,7 +346,7 @@ img.displaySlide {
   margin-top: 30px;
 }
 .contact-left p i {
-  color: #0ef6cc;
+  color: #f3f88e;
   font-size: 25px;
 }
 .social-icons {
@@ -361,12 +362,12 @@ img.displaySlide {
   transition: transform 0.5s;
 }
 .social-icons a:hover {
-  color: #0ef6cc;
+  color: #f3f88e;
   transform: translateY(-10px);
 }
 .btn.btn2 {
   display: inline-block;
-  background: #0ef6cc;
+  background: #f3f88e;
   color: #000;
 }
 .btn.btn2:hover {
@@ -406,7 +407,7 @@ nav .fa-solid {
 
 @media only screen and (max-width: 600px) {
   #header {
-    background-image: url(images/test4-vert.jpg);
+    background-image: url(images/nightsky.jpg);
   }
   #portfolio {
     margin: 0;
