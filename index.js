@@ -77,7 +77,7 @@ function writeOut(txt1Arr, txt2Arr, txt3Arr, curChar = 0) {
       return deleteOut(txt1Arr, txt2Arr, txt3Arr, txt1Arr.length);
     }
     return writeOut(txt1Arr, txt2Arr, txt3Arr, curChar + 1);
-  }, randomTime * 800);
+  }, randomTime * 500);
 }
 function deleteOut(txt1Arr, txt2Arr, txt3Arr, curChar = 0) {
   const randomTime = Math.random() * 0.5;
@@ -92,7 +92,7 @@ function deleteOut(txt1Arr, txt2Arr, txt3Arr, curChar = 0) {
       return writeOut(txt2Arr, txt3Arr, txt1Arr, 0);
     }
     return deleteOut(txt1Arr, txt2Arr, txt3Arr, elTxtArrLength - 1);
-  }, randomTime * 800);
+  }, randomTime * 500);
   return;
 }
 

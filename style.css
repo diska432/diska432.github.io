@@ -119,9 +119,17 @@ nav ul li a:hover::after {
   color: rgb(143, 113, 233)
 }
 
+.draftaid:hover {
+  color: rgb(112, 86, 192)
+}
+
 .descartes {
   text-decoration: none;
   color: rgb(59, 140, 216)
+}
+
+.descartes:hover {
+  color: rgb(48, 126, 200)
 }
 
 .feroot {
@@ -129,14 +137,26 @@ nav ul li a:hover::after {
   color: rgba(206, 100, 244, 0.729)
 }
 
+.feroot:hover {
+  color: rgba(185, 86, 221, 0.729)
+}
+
 .manulife {
   text-decoration: none;
   color: rgba(88, 239, 151, 0.729)
 }
 
+.manulife:hover {
+  color: rgba(72, 202, 127, 0.729)
+}
+
 .smartnet {
   text-decoration: none;
   color: rgba(194, 251, 187, 0.729)
+}
+
+.smartnet:hover {
+  color: rgba(111, 208, 98, 0.729)
 }
 
 .tab-titles {
@@ -266,7 +286,7 @@ img.displaySlide {
 
 .work-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
   margin-top: 50px;
 }
@@ -274,6 +294,7 @@ img.displaySlide {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  aspect-ratio: 1;
 }
 .work img {
   width: 100%;
@@ -281,6 +302,7 @@ img.displaySlide {
   border-radius: 10px;
   display: block;
   transition: transform 0.5s;
+  object-fit: cover;
 }
 .layer {
   width: 100%;
@@ -398,11 +420,19 @@ form .btn2 {
   cursor: pointer;
 }
 
-/* ------------------small screen responsive design----------------------------- */
+/* ------------------responsive design----------------------------- */
 
 nav .fa-regular,
 nav .fa-solid {
   display: none;
+}
+
+/* Medium screens - tablets */
+@media only screen and (max-width: 900px) {
+  .work-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -411,6 +441,10 @@ nav .fa-solid {
   }
   #portfolio {
     margin: 0;
+  }
+  .work-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
   }
   .social-icons a {
     text-decoration: none;
